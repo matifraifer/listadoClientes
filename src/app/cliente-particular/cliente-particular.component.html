@@ -1,0 +1,28 @@
+<div class="encabezado">
+    <div class="tituloEncabezado">BORRAR CLIENTE</div>
+    <div class="masEncabezado"> - </div>
+</div>
+<div class="body">
+    <div class="formulario">
+        <div class="tituloBorrar">
+            <p>¿Seguro quiere borrar a {{cliente.nombre}}?</p>
+        </div>
+        <div class="datosCliente">
+            <div class="nombDiv">Nombre del cliente:</div>
+            <div>{{cliente.nombre}}</div>
+        </div>
+        <div class="datosCliente">
+            <div class="nombDiv">Codigo:</div>
+            <div >{{cliente.codChat}}</div>
+        </div >
+        <div class="datosCliente" n>   
+            <div class="nombDiv">Canal:</div>
+            <div>{{cliente.canal}}</div>
+        </div>
+
+        <div>
+            <button class="botonBorrar" (click)="eliminar()">Borrar</button>
+            <button (click)="regresar()" class="botonBack">No Borrar</button>
+        </div>
+    </div>
+</div>

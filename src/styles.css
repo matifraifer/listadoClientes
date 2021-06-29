@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Noto Sans JP', sans-serif; }
+.tr{
+    margin-left:30em ;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50% ;
+    padding: 20px;
+    box-shadow:        
+    0.5em 0.5em 0.5em 0.5em rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}

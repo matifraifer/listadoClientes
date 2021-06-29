@@ -1,0 +1,31 @@
+
+
+<div class="encabezado">
+    <div class="tituloEncabezado">AGREGAR NUEVO CLIENTE</div>
+    <div class="masEncabezado"> + </div>
+</div>
+    <div class="body">
+        <form class="formulario">
+            <label for="Nombre">Nombre</label>
+            <Input type="text" name="nombre" placeholder="Nombre" required  [(ngModel)]="clienteNoId.nombre" ngDefaultControl>
+            <label for="codChat">Codigo</label>
+            <Input type="text" name="codChat" required [(ngModel)]="clienteNoId.codChat" ngDefaultControl >
+            <label for="canal">Canal</label>
+            <Input type="text" name="canal" required  [(ngModel)]="clienteNoId.canal" ngDefaultControl>
+            <div>
+                <select name="empresa" id="" class="selectEmpresas">
+                    <option value="" >Seleccione una empresa</option>
+                    <option value="empresa" name="id" [(ngModel)]="empresa.nombre" ngDefaultControl *ngFor="let empresa of empresa">{{empresa.nombre}}       
+                    </option>
+                </select>
+            </div>
+            <div class="contenedorBotones">
+                <div class="dosBotones">
+                    <input type="reset" class="botonBorrar" value="Borrar datos">
+                    <button class="botonAgregar" (click)="guardarCliente()">Enviar datos</button>
+                </div>
+                <button class="botonBack" (click)="regresarListado()">Regresar al listado</button>
+            </div>
+        </form>
+    </div>
+

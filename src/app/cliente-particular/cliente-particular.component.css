@@ -1,0 +1,76 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tituloBorrar{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.datosCliente{
+    display: flex;
+    flex-direction: row;
+}
+.nombDiv{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color: rgb(73, 73, 73);
+}
+.encabezado{
+    box-shadow:        
+    0.5em 0.5em 0.5em 0.5em rgba(0,0,0,0.2);
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.tituloEncabezado{
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgb(87, 87, 87);
+}
+.masEncabezado{
+    padding: 20px;
+    background-color: rgb(179, 0, 0);
+    color: white;
+    font-weight: 900;
+    font-size:xx-large;
+    width: 10%;
+    text-align: center;
+}
+.botonBorrar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding: 1em 3em;
+    color: white;
+    width: 100%;
+    font-weight: bolder;
+    background-color: rgb(179, 0, 0);
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+}
+.botonBack{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 1em 3em;
+    color: black;
+    width: 100%;
+    font-weight: bolder;
+    background-color:white;
+    border-radius: 20px;
+    border: rgb(0, 179, 0) solid 1px;
+    cursor: pointer;
+}

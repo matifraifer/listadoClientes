@@ -1,0 +1,40 @@
+
+<div class="encabezadoListado">
+    <div class="tituloEncabezado">Listado de Clientes</div>
+    <button class="botonAgregarEncabezado" (click)="navAgregar()">+</button>
+</div>
+<body class="body">
+
+
+<div class="sombra">
+
+    
+    <div class="encabezado">
+        <div id="nombre">Nombre y Apellido</div>
+        <div>Codigo</div>
+        <div id="canal">Canal</div>
+    </div>
+    <div class="flexData" *ngFor="let cliente of clientes">
+        <div class="border3">
+            <div class="border2" id="columna1" >
+            {{cliente.nombre}}
+            </div>
+        </div>
+        <div class="border3">
+            <div class="border2" id="columna2">
+            {{cliente.codChat}}
+            </div>
+        </div>
+        <div class="border3" >
+            <div class="border4">
+            {{cliente.canal}}
+            </div>
+        </div>
+        <div>
+            <button (click)="editarCliente(cliente.id)" class="botonBorrar">Borrar</button>
+        </div>
+    </div>
+</div>
+<button class="botonAgregar" (click)="navAgregar()">Agregar Cliente</button>
+<div class="borde"></div>
+</body>
