@@ -16,7 +16,7 @@ export class AuthService {
   constructor( private http: HttpClient) { }
 
 login(username : string, password: string){
-    const url = `${this.baseUrl}/authenticate`;
+    const url = `${this.baseUrl}authenticate`;
     const body = {username: "demo1", password: "FEpass"};
 
     return this.http.post<AuthResponse>(url, body)
